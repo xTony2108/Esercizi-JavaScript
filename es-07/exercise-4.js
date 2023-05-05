@@ -35,5 +35,5 @@ const persons = [
 ];
 
 const nicknames = nicknameMap(persons);
-// console.log(persons);
+console.log(persons);
 console.log(nicknames);
