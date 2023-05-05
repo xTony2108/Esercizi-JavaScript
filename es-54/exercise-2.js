@@ -1,5 +1,5 @@
 function nicknameMap(arr) {
-  newArr = []
+  let newArr = []
   arr.forEach(el => {newArr.push(el.name + "-" + el.age)});
   // arr.forEach(el => {newArr[newArr.length] = el.name + "-" + el.age});
   return newArr;
