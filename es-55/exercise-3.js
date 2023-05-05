@@ -1,6 +1,6 @@
 function calculateAverageAge(arr) {
   let initialValue = 0;
-  const avg = arr.reduce((a, b, i) => a + b.age, initialValue);
+  const avg = arr.reduce((a, b) => a + b.age, initialValue);
   return Math.round(avg/arr.length);
 }
 
