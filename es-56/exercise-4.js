@@ -1,7 +1,6 @@
 function uncompletedNotes(arr) {
-  let notDone = [];
-  arr.forEach((el) => {
-    notDone.push(el.todos.filter(el => el.done == false))
+  let notDone = arr.map((el) => {
+    return el.todos.filter((el) => el.done == false);
   });
   return notDone;
 }
