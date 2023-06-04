@@ -82,7 +82,7 @@
   const renderOutput = () => {
     newDiv.innerHTML = `
     <p>Created record with id:${state.output.id}</p>
-    <p>Title: ${state.form.title}, Completed: ${state.form.completed}
+    <p>Title: ${state.output.title}, Completed: ${state.output.completed}
     `;
     $container.insertAdjacentElement("beforeend", newDiv);
   };
