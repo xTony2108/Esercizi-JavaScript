@@ -5,8 +5,7 @@ const user = {
 };
 
 const saveLocalStorage = () => {
-  const { name } = user;
-  localStorage.setItem("name", JSON.stringify(name));
+  localStorage.setItem("user", JSON.stringify(user));
 };
 
 saveLocalStorage();
