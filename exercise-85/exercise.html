@@ -21,5 +21,7 @@
 
 <script>
   const $inputs = document.querySelectorAll(".form-input");
-  console.log($inputs);
+  $inputs.forEach((input) => {
+    console.log(input.value);
+  });
 </script>
