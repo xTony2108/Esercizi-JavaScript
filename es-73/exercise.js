@@ -2,8 +2,8 @@ const printAsyncName = (callback, name) => {
   if (typeof name !== "string") {
     console.error("Name is not a string");
   } else {
-    setInterval(callback, 1000);
-    setInterval(() => {
+    setTimeout(callback, 1000);
+    setTimeout(() => {
       console.log(name);
     }, 2000);
   }
