@@ -3,11 +3,8 @@ const person = {
   firstName: "Mario",
   lastName: "Rossi",
   age: 25,
-  toJSON() {
-    return { id: this.id, age: this.age };
-  },
 };
 
-const json = JSON.stringify(person);
+const json = JSON.stringify(person, ["id", "age"]);
 
 console.log(json); // Should return: { id: 1, age: 25 }
